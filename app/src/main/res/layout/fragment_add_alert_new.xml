@@ -12,14 +12,7 @@
         android:layout_height="wrap_content">
 
 
-        <android.support.v7.widget.CardView
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:card_view="http://schemas.android.com/apk/res-auto"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            card_view:cardCornerRadius="5dp"
-            card_view:cardUseCompatPadding="true">
+     
 
         <android.support.design.widget.TextInputLayout
             android:layout_weight="2"
@@ -34,7 +27,7 @@
                 android:padding="2dp"
                 android:hint="Enter Title"/>
         </android.support.design.widget.TextInputLayout>
-        </android.support.v7.widget.CardView>
+        
 
         <LinearLayout
             android:layout_marginTop="10dp"
@@ -42,10 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <android.support.design.widget.TextInputLayout
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content">
+            
             <AutoCompleteTextView
                 android:id="@+id/etv_alertAddress"
                 android:layout_width="match_parent"
@@ -58,7 +48,7 @@
                 android:hint="Enter Address ">
                 <requestFocus />
             </AutoCompleteTextView>
-            </android.support.design.widget.TextInputLayout>
+            
 
 
             <LinearLayout
