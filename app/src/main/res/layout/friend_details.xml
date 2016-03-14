@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:gravity="center_vertical|center_horizontal"
+        android:textAlignment="center"
+        android:layout_weight="1"
+        android:id="@+id/friend_srno"
+        android:text="1"
+        android:layout_width="0px"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:id="@+id/friend_linearlayout"
+        android:layout_weight="7"
+        android:orientation="vertical"
+        android:layout_width="0px"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="24dp"
+            android:id="@+id/friend_name"
+            android:text="Sachin Ambalkar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="2"
+                    android:textSize="14dp"
+                    android:id="@+id/friend_timeDetail"
+                    android:text="10 Jan 2014"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:id="@+id/friend_distanceDetail"
+                    android:textSize="12dp"
+                    android:text="4 miles"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+</LinearLayout>

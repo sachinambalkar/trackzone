@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/popupDelete"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="50px"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="90px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Do you want to delete ?"
+        android:textColor="@color/material_deep_teal_500"
+        android:id="@+id/tv_marker_title"
+        android:layout_weight="0.05" />
+<LinearLayout
+    android:layout_marginTop="20dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:layout_weight="1"
+        android:textColor="@color/material_deep_teal_500"
+        android:textSize="50px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ok"
+        android:layout_gravity="right"
+        android:id="@+id/popupbutton_delete_ok" />
+    <Button
+        android:layout_weight="1"
+        android:textColor="@color/material_deep_teal_500"
+        android:textSize="50px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:layout_gravity="right"
+        android:id="@+id/popupbutton_delete_cancel" />
+
+</LinearLayout>
+
+
+</LinearLayout>

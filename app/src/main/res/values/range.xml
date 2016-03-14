@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="range">
+        <item>@string/RangeDefault</item>
+        <item>@string/Range1</item>
+        <item>@string/Range2</item>
+        <item>@string/Range3</item>
+        <item>@string/Range4</item>
+    </string-array>
+
+    <string-array name="mode_range">
+        <item>@string/ModeRangeDefault</item>
+        <item>@string/ModeRange1</item>
+        <item>@string/ModeRange2</item>
+        <item>@string/ModeRange3</item>
+        <item>@string/ModeRange4</item>
+    </string-array>
+
+</resources>

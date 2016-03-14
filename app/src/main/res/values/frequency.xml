@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="frequency">
+        <item>@string/FrequencyDefault</item>
+        <item>@string/FrequencyOnce</item>
+        <item>@string/FrequencyDaily</item>
+        <item>@string/FrequencyMonday</item>
+        <item>@string/FrequencyTuesday</item>
+        <item>@string/FrequencyWednesday</item>
+        <item>@string/FrequencyThursday</item>
+        <item>@string/FrequencyFriday</item>
+        <item>@string/FrequencySaturday</item>
+        <item>@string/FrequencySunday</item>
+    </string-array>
+
+</resources>

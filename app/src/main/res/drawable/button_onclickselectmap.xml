@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/correctarrowred" android:state_pressed="true" />
+        <item android:drawable="@drawable/correctarrow" android:state_pressed="false" />
+    <item android:drawable="@color/material_deep_teal_500" android:state_focused="true" />
+</selector>

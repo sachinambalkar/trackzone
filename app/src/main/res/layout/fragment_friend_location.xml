@@ -1,0 +1,89 @@
+<LinearLayout
+    android:id="@+id/friend_location_layout"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cs442.com.fragment.FriendLocation">
+
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="39dp">
+            <com.facebook.login.widget.LoginButton
+                android:textSize="14dp"
+                android:layout_weight="1"
+                android:visibility="visible"
+                android:id="@+id/login_button"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                facebook:confirm_logout="false"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:background="@color/highlighted_text_material_light"
+                />
+
+            <Button
+                android:textSize="12dp"
+                android:layout_weight="1"
+                android:layout_gravity="right"
+                android:text="Details"
+                android:layout_marginRight="5dp"
+                android:id="@+id/fb_buttonDetails"
+                android:layout_width="0px"
+                android:textColor="@android:color/white"
+                android:background="@color/highlighted_text_material_light"
+                android:layout_height="wrap_content" />
+            <Button
+                android:textSize="12dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:layout_gravity="right"
+                android:text="Get Direction"
+                android:id="@+id/fb_Button_GetDirection"
+                android:layout_width="0px"
+                android:textColor="@android:color/white"
+                android:background="@color/highlighted_text_material_light"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+    <fragment
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:id="@+id/mapFacebook" />
+
+<!--
+    <ScrollView
+        android:id="@+id/facebook_id"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/linearLayout_facebook_frnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </LinearLayout>
+    </ScrollView>
+-->
+
+
+    <ListView
+        android:layout_weight="10"
+        android:id="@+id/listview_fblist"
+        android:layout_width="match_parent"
+        android:layout_height="0px"></ListView>
+
+
+
+</LinearLayout>

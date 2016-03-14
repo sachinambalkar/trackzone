@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardUseCompatPadding="true">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_weight="2"
+            android:id="@+id/input_layout_groupname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/etv_alertTitle"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="2dp"
+                android:hint="Enter Title"/>
+        </android.support.design.widget.TextInputLayout>
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+            <AutoCompleteTextView
+                android:id="@+id/etv_alertAddress"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+
+                android:padding="2dp"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:lines="2"
+                android:hint="Enter Address ">
+                <requestFocus />
+            </AutoCompleteTextView>
+            </android.support.design.widget.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <Button
+                    android:textSize="10dp"
+                    android:id="@+id/buttonLocation"
+                    android:text="Get Current Location"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitXY"/>
+                <Button
+                    android:textSize="10dp"
+                    android:id="@+id/editBtnMap"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:text="Get Location by Map"
+                    android:scaleType="fitXY"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.jesusm.holocircleseekbar.lib.HoloCircleSeekBar
+                android:id="@+id/seekBar_HoloCircle"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:max="10"
+                app:pointer_color="@color/point_color"
+                app:pointer_halo_color="@color/point_halo_color"
+                app:pointer_size="8dp"
+                app:text_color="@color/text_color"
+                app:text_size="25sp"
+                app:wheel_active_color="@color/wheel_active_color"
+                app:wheel_unactive_color="@color/wheel_unactive_color"/>
+            <TextView
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:text="Select Range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom">
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/buttonSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"/>
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/buttonCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"/>
+
+        </LinearLayout>
+        <EditText
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:id="@+id/editLat"
+            android:layout_alignParentLeft="true"
+            android:hint="Latitude" />
+
+        <EditText
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:id="@+id/editLong"
+            android:layout_alignParentLeft="true"
+            android:hint="Longitude" />
+
+    </LinearLayout>
+
+</ScrollView>

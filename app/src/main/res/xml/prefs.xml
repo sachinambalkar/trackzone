@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen  xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="v_alert"
+        android:summary="Enable view all alert guideline"
+        android:title="View all alert"/>
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="a_alert"
+        android:summary="Enable add new alert guideline"
+        android:title="add new alert"/>
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="notify_alert"
+        android:summary="Enable notify alert guideline"
+        android:title="notify all alert"/>
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="sample_alert"
+        android:summary="Enable notify alert guideline"
+        android:title="create sample alert"/>
+
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="fb_guide"
+        android:summary="fb guideline"
+        android:title="facebook guide"/>
+
+
+</PreferenceScreen>

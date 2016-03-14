@@ -1,0 +1,50 @@
+<!-- A DrawerLayout is intended to be used as the top-level content view using match_parent for both width and height to consume the full space available. -->
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cccc"
+    tools:context=".MainActivity">
+
+
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.app.MainActivity"
+        tools:ignore="MergeRootFrame" >
+
+        <ImageButton
+            android:visibility="invisible"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageButton"
+            android:focusable="true"
+            android:onClick="Stop_Notification_Service"
+            android:layout_gravity="top|right"
+            />
+    </FrameLayout>
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/HomeScreenMap_linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></LinearLayout>
+
+
+
+    <fragment android:id="@+id/navigation_drawer"
+        android:layout_width="@dimen/navigation_drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start" android:name="cs442.com.fragment.NavigationDrawerFragment"
+        tools:layout="@layout/fragment_navigation_drawer" />
+
+
+
+</android.support.v4.widget.DrawerLayout>

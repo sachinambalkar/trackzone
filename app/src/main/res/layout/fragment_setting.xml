@@ -1,0 +1,104 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#cccc"
+android:orientation="vertical"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:layout_gravity="center">
+
+
+
+    <Button
+        android:layout_marginRight="5dp"
+        android:textAllCaps="false"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:background="#cccc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notification"
+        android:gravity="start|bottom"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_marginRight="5dp"
+        android:textAllCaps="false"
+        android:gravity="start|center"
+        android:layout_marginLeft="10dp"
+        android:textSize="15dp"
+        android:background="#cccc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Notification tone"
+        android:id="@+id/ButtonalertTone"
+        android:layout_gravity="center_horizontal" />
+
+
+
+    <LinearLayout
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="20dp"
+        android:background="@android:color/darker_gray"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"></LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+
+        android:background="@android:color/darker_gray"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"></LinearLayout>
+
+
+    <Button
+        android:layout_marginRight="5dp"
+        android:textAllCaps="false"
+        android:gravity="start|bottom"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:background="#cccc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Other"
+        android:layout_gravity="center_horizontal" />
+
+
+    <Button
+        android:layout_marginRight="5dp"
+        android:textAllCaps="false"
+        android:gravity="start|center"
+        android:layout_marginLeft="10dp"
+        android:textSize="15dp"
+        android:background="#cccc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Location setting"
+        android:id="@+id/ButtonLocaitonSetting"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_marginRight="5dp"
+        android:textAllCaps="false"
+        android:gravity="start|center"
+        android:layout_marginLeft="10dp"
+        android:textSize="15dp"
+        android:background="#cccc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Internet Setting"
+        android:id="@+id/ButtonDataSetting"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="20dp"
+        android:background="@android:color/darker_gray"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"></LinearLayout>
+
+
+</LinearLayout>
